@@ -1,0 +1,38 @@
+div {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px double black;
+  margin: 100px;
+  margin: 20px;
+  max-width: 500px;
+  float: left;
+}
+
+p,
+h1 {
+  padding: 0px 20px;
+}
+
+h1 {
+  background-color: rgb(100, 100, 100);
+  width: fit-content;
+  margin-left: 20px;
+}
+
+#one {
+  color: yellowgreen;
+}
+
+#two {
+  color: yellow;
+}
+
+#three {
+  color: red;
+}
+
+h1 {
+  float: right;
+  clear: both;
+}
