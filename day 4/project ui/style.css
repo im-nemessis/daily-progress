@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper2,
+.wrapper3 {
+  height: 60px;
+  width: 90%;
+  margin: 0px auto;
+}
+
+.wrapper1 {
+  position: fixed;
+}
+nav {
+  position: fixed;
+  background-color: white;
+  width: 90%;
+  height: 60px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  align-items: center;
+}
+
+nav h1 {
+  margin-left: 5%;
+  font-family: nunito;
+  width: 30%;
+  padding: 1%;
+  margin: 3%;
+}
+
+nav h1:after {
+  display: inline;
+  content: ".";
+  color: red;
+}
+nav ul {
+  display: none;
+}
+nav img {
+  padding: 1%;
+  margin: 1%;
+  float: right;
+  width: 20px;
+}
+
+.wrapper2 {
+  height: 95%;
+  background-color: white;
+}
+.container {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.container img {
+  width: 100%;
+  height: 400px;
+}
+
+.getstarted h1 {
+  font-family: "Nunito", sans-serif;
+
+  margin-top: 30px;
+}
+.getstarted p {
+  font-family: "Nunito", sans-serif;
+  padding-top: 1em;
+}
+
+.getstarted button {
+  margin-top: 1em;
+}
+
+.btn {
+  margin-top: 40px;
+  font-family: "Nunito", sans-serif;
+  background-color: #0099ff; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+  box-shadow: 2px 2px 5px black;
+  border-radius: 2em;
+
+  transition: all 250ms ease-in;
+}
+
+.btn:hover {
+  background-color: #98d5fd;
+  color: black;
+}
+
+@media screen and (min-width: 860px) {
+  .container {
+    height: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    direction: ltr;
+    grid-row-gap: 20px;
+  }
+
+  .container img {
+    width: 800px;
+    height: 700px;
+  }
+
+  nav img {
+    display: none;
+    width: 35px;
+  }
+  nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style: none;
+
+    justify-items: end;
+    align-items: center;
+    grid-column-gap: 3%;
+  }
+
+  nav li {
+    display: inline-block;
+    border: 1px solid #0099ff;
+    padding: 7%;
+    margin: 1%;
+    border-radius: 2em;
+  }
+
+  nav li a {
+    color: black;
+    text-align: center;
+    text-decoration: none;
+  }
+}
+
+nav ul :nth-child(3) {
+  background: #0099ff;
+  border: 1px solid black;
+}
+
+nav li :nth-child(3) {
+  color: white;
+}

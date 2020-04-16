@@ -1,0 +1,111 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+nav {
+  width: 100%;
+  height: 10%;
+  background: rgb(193, 232, 255);
+}
+
+.wrapper,
+.wrapper2 {
+  width: 85%;
+  height: 100%;
+  margin: 0px auto;
+  background: white;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 3px 1px 5px darkcyan;
+  border-radius: 1em;
+}
+
+.logo {
+  align-self: center;
+  justify-content: start;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1em;
+  padding-left: 1em;
+}
+
+ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-self: center;
+  justify-content: end;
+  grid-gap: 10px;
+}
+
+li {
+  background-color: rgb(255, 46, 81);
+  text-align: center;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 2em;
+  box-shadow: 3px 1px 5px pink;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* body */
+
+.wrapper2 {
+  box-shadow: none;
+  background: white;
+  margin-top: 20px;
+  height: 70%;
+  grid-template-columns: 2fr 1fr;
+}
+
+.content1,
+.content2 {
+  height: 95%;
+  margin: 5%;
+  background-color: pink;
+  align-self: center;
+  box-shadow: 3px 3px 3px;
+  border-radius: 1em;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+}
+.content1 {
+  box-shadow: 3px 1px 5px pink;
+  background-color: rgb(255, 46, 81);
+}
+.content2 {
+  box-shadow: 3px 3px 5px rgb(124, 124, 124);
+}
+
+h1 {
+  position: relative;
+  top: 3em;
+  padding: 10px;
+  color: white;
+}
+
+p {
+  padding: 10px;
+}
+
+@media screen and (max-width: 350px) {
+  .wrapper2 {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    position: relative;
+    bottom: 2em;
+    padding: 10px;
+    color: white;
+  }
+
+  a {
+    font-size: 0.9em;
+  }
+}
