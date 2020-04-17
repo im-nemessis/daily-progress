@@ -29,6 +29,7 @@ nav {
 }
 
 nav h1 {
+  letter-spacing: 0.3em;
   margin-left: 5%;
   font-family: nunito;
   width: 30%;
@@ -74,10 +75,14 @@ nav img {
   margin-top: 30px;
 }
 .getstarted p {
+  letter-spacing: 0.1em;
   font-family: "Nunito", sans-serif;
   padding-top: 1em;
 }
-
+.getstarted a {
+  text-decoration: none;
+  color: #0099ff;
+}
 .getstarted button {
   margin-top: 1em;
 }
@@ -134,6 +139,7 @@ nav img {
   }
 
   nav li {
+    font-family: Nunito;
     display: inline-block;
     border: 1px solid #0099ff;
     padding: 7%;
