@@ -54,7 +54,7 @@
   grid-template-columns: 1fr;
   justify-items: center;
   align-items: center;
-  background: linear-gradient(to right, rgb(0, 76, 255), rgb(155, 193, 228));
+  background: white;
 }
 
 /* .
