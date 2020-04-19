@@ -15,8 +15,8 @@
 
 .container {
   overflow-y: scroll;
-  width: 340px;
-  height: 200px;
+  width: 300px;
+  height: 250px;
   border: 1px solid rgb(219, 219, 219);
 }
 
