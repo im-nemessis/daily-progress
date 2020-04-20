@@ -15,7 +15,7 @@
 }
 
 .container {
-  width: 470px;
+  width: 450px;
   height: 600px;
   border: 1px solid rgb(207, 207, 207);
   text-align: center;
@@ -119,4 +119,15 @@ form :nth-child(6) img {
   position: relative;
   bottom: 24%;
   right: 2%;
+}
+
+@media screen and (min-width: 500px) {
+  .container {
+    width: 550px;
+  }
+
+  h4 {
+    position: relative;
+    bottom: 2%;
+  }
 }
