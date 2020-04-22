@@ -2,6 +2,8 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .wrapper {
@@ -20,6 +22,7 @@
   position: relative;
   width: 330px;
   height: 600px;
+  height: 600px auto;
 }
 
 .part1 {
@@ -38,11 +41,29 @@
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
-  transition: transform 1s ease;
+  transition: transform 420ms ease;
+  animation: animate 5s ease-in-out infinite alternate;
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 225, 255),
+    rgb(183, 0, 255),
+    rgb(17, 0, 255)
+  );
+
+  background-position: left;
+  background-size: 500%;
+}
+
+@keyframes animate {
+  from {
+    background-position: left;
+  }
+  to {
+    background-position: right;
+  }
 }
 
 button {
-  box-shadow: 1px 0px 8px rgb(66, 66, 66);
   font-family: cursive;
   font-weight: bold;
   width: 100px;
@@ -52,11 +73,13 @@ button {
   background-color: rgb(255, 255, 255);
   border-radius: 2em;
   cursor: pointer;
+  box-shadow: 2px 2px 5px grey;
 }
 
 h1 {
   text-align: center;
   padding: 5%;
+  margin-right: 9%;
 }
 
 form {
@@ -70,11 +93,14 @@ input {
   height: 60%;
   padding: 3%;
   padding-left: 7%;
-  border: 1px solid rgb(182, 182, 182);
+  border: none;
   border-radius: 1.5em;
+
+  box-shadow: 2px 2px 5px grey;
 }
 
 label {
+  color: black;
   position: absolute;
   top: 5%;
   border-radius: 50%;
@@ -85,6 +111,7 @@ label {
   font-size: 2em;
   font-weight: bold;
   left: 110%;
+  box-shadow: 2px 2px 5px grey;
 }
 
 label p {
@@ -100,22 +127,27 @@ li {
   position: relative;
   width: 95%;
   height: 50px;
-  margin: 0 auto;
-
+  margin: 4% auto;
+  box-shadow: 2px 2px 5px grey;
   padding: 2% 5%;
   border: 1px solid rgb(204, 204, 204);
   border-radius: 2em;
+
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-items: center;
 }
 
 li p {
+  color: rgb(0, 0, 0);
   justify-self: start;
   margin-top: -1.7%;
+  font-size: 0.8em;
 }
-
 li h4 {
+  color: rgb(0, 0, 0);
+
+  box-shadow: 2px 2px 5px grey;
   padding: 7%;
   margin-top: -1.7%;
   border-radius: 2em;
@@ -124,12 +156,14 @@ li h4 {
 }
 
 .back {
+  color: rgb(0, 0, 0);
   position: absolute;
   font-size: 1em;
   top: 3%;
   left: 80%;
   border-radius: 1em;
-  background-color: greenyellow;
+
   padding: 2%;
   cursor: pointer;
+  box-shadow: 2px 2px 5px grey;
 }
