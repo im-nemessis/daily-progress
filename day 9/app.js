@@ -12,8 +12,9 @@ const value = {
 };
 
 function getEl(id) {
-  return document.querySelector(`${id}`);
+  let ans = document.querySelector(id);
+  return ans;
 }
 
-ans = getEl(.ans);
-console.log('ans')
+let ans = new getEl(".operator");
+console.log(ans);
