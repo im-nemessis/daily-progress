@@ -89,3 +89,37 @@ function charCount(string, char) {
 }
 
 console.log(charCount("boob", "o"));
+
+//sum range
+
+function sumRange(start, end, step = 1) {
+  if (step == 0) {
+    return;
+  }
+
+  let ans = start;
+  let array = [];
+
+  if (Math.sign(step) == 1) {
+    while (ans < end) {
+      array.push(ans);
+
+      ans += step;
+    }
+    array.push(end);
+  } else {
+    if (start > end) {
+      while (ans > end) {
+        array.push(ans);
+        ans -= -step;
+      }
+      array.push(end);
+    } else {
+      console.log("not possible");
+    }
+  }
+
+  console.log(array);
+}
+
+sumRange(50, 2, -2);
