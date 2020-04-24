@@ -29,26 +29,52 @@ function reverseArrayInPlace(array) {
 console.log(reverseArrayInPlace(a));
 
 //list
-
 let list = {
   value: null,
   rest: null,
 };
 
-function listToArray(list, arr) {
-  if (arr.length == 0) {
-    list.rest = null;
-    return list;
+function arrayToList(list, arr = []) {
+  let array = arr;
+
+  if (array.length == 0) {
+    return (list.rest = null);
   }
 
-  list.value = arr[0];
-  let sliceArr = arr.slice(1);
+  list.value = array[0];
+  let sliceArr = array.slice(1);
   list.rest = {
     value: null,
     rest: null,
   };
 
-  listToArray(list.rest, sliceArr);
+  arrayToList(list.rest, sliceArr);
+
+  return list;
 }
 
-console.log(listToArray(list, a));
+let b = [1, 2, 3, 4, 5];
+let list2 = arrayToList(list, b);
+
+console.log(list2);
+
+//list to array
+
+function listToArray(list = {}) {
+  let arr = [];
+  if (list.rest == null) {
+    arr.push(list.value);
+    return arr;
+  }
+  arr.push(list.value);
+  listToArray(list.rest);
+}
+
+let c = {
+  value: 1,
+  rest: {
+    value: 2,
+    rest: null,
+  },
+};
+console.log(listToArray(list2));
