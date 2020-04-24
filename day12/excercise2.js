@@ -38,7 +38,7 @@ function arrayToList(list, arr = []) {
   let array = arr;
 
   if (array.length == 0) {
-    return (list.rest = null);
+    return (list = null);
   }
 
   list.value = array[0];
@@ -60,14 +60,16 @@ console.log(list2);
 
 //list to array
 
-function listToArray(list = {}) {
-  let arr = [];
+function listToArray(list = {}, arr = []) {
+  let array = arr;
   if (list.rest == null) {
-    arr.push(list.value);
-    return arr;
+    return;
   }
+
   arr.push(list.value);
-  listToArray(list.rest);
+  listToArray(list.rest, array);
+
+  return arr;
 }
 
 let c = {
@@ -78,3 +80,9 @@ let c = {
   },
 };
 console.log(listToArray(list2));
+
+// “There are two ways of constructing a software design: One way is
+// to make it so simple that there are obviously no deficiencies, and the
+// other way is to make it so complicated that there are no obvious
+// deficiencies.”
+// —C.A.R. Hoare, 1980 ACM Turing Award Lecture
