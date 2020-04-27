@@ -35,3 +35,29 @@ function printFarmInventory(num, ...objs) {
 printFarmInventory(10, "hen");
 
 //THE LYCANTHROPE'S LOG
+
+//journal
+
+let journal = [];
+
+//add entry
+
+function addEntry(events, squirrel) {
+  journal.push({ events, squirrel });
+}
+
+addEntry(["work", "touched tree", "pizza", "running", "television"], false);
+
+addEntry(
+  [
+    "work",
+    "ice cream",
+    "cauliflower",
+    "lasagna",
+    "touched tree",
+    "brushed teeth",
+  ],
+  false
+);
+
+addEntry(["weekend", "cycling", "break", "peanuts", "beer"], true);

@@ -80,5 +80,50 @@ const binding to an object can itself not be changed and will continue to point 
 
 when when compare object in javascript with "==" operator it compares by the indentity.
 
+NOTE
+if a property name in a brace notation isnt followed by a value, itrs value is taken from the binding with the same name.
+
+ARRAY LOOP
+
+||
+
+for(let i of journal ){
+//do soemthing with i
+}
+
+||
+in this snytax a loop will happen to the binding after of where its each element will get stored in "i" and then evalutated in that block.
+
+
+when AN PARAMETER is given in form like this
+(...PARAMETER) such PARAMETER are called rest PARAMETER the rest parameter is bound to an array containing all further arguements
+
+if there are other parameter before the rest PARAMETER their value is not considerd as the part of that array.
+
+similary we we can ue three dot notation to call a function with an array of arguements
+
+
+this spreads out the array into the fuction call passing its array as seperate arguements
+
+
+
+JSON
+
+json is serialize form of data.
+it stands fro javascript Onject notation.
+
+
+some snytax restriction
+all property names have to be surrounded by double quotes,
+
+only simple data expression is allowed - no function calls , bindings or anything taht invilves actual computation
+
+javascript gives us the function JSON.Stringify and 
+JSON.parse,which converts javascript object into json and converts json string into javascript object respectively
+
+
+
+
+
 
 
