@@ -1,0 +1,150 @@
+“People think that computer science is the art of geniuses but the
+actual reality is the opposite, just many people doing things that
+build on each other, like a wall of mini stones.”
+
+
+
+function (role)
+
+It is used to wrapped a peice o fprogram in a value.
+Gives a way to structure larger programs.
+helps in reducing the repeation of code.
+helps in isolating other subprogramm form sub programm.
+
+(Use)
+ a function is created with an express "function" keyword in
+ the beggining, it have sets of parameter and body which contains the statement 
+ that are to be executed when callled;
+
+||  const square = function(x) {
+return x * x;
+};
+console.log(
+||
+
+(pecualarities)
+
+A function can have multiple parameter or no parameter at all.
+Some function produce a vlaue and soem don't.
+Those functions which dont produce a value give "side effects'.
+
+
+RETURN (keyword)
+
+a return keyword determine the value a function will return.
+when control comes to such statement it jumps from the current function 
+and return a value.
+
+A return keyword with no statement return 'undefined' and jumps out of the function
+
+function with no return statement similarly gives back 'undefined'.
+
+
+
+BINDING AND SCOPES
+
+Each BINDING has a scope.
+Scope of a binding is the part of programm in which it is visible.
+
+Any binding defined out side any programm is of scope global because you can you that binding whenever you want.
+
+
+LOCAL BINDINGS
+
+The bindings created inside a function has scope of local.
+this binding is only visible to the  the parameter or the functions inside that function only
+
+Every time a function is callled a new instances of that binding is created.
+
+PROS
+This provide some isolation between some functions.
+each function call acts in its own little world and can often be understood without knowing alot about the global environment.
+
+
+BINDINGS created with let and const keyword are local to block that they are declared in.
+
+eg. if a binding is declared in a loop the code before the loop and after the loop can't see the binding in that block.
+
+
+VAR (keyword);
+
+binding declared with var keyword has scope local throught out the function in which it was declared.
+
+
+NESTED SCOPE 
+
+
+Javascript distinguised not only global and local binding .
+block and function can be created inside another block and function producing multiple degree of locality.
+
+FUNCTION AS VALUE
+
+function binding (or storing a function to a name usinf let and const) act as just a name to a fuction. once defined it cant be changed.
+
+A function value can do all  the things that other values can do -
+YOu can use it a an arbitrary function statement to another fuction.
+you can pass its value to a new binding.
+
+
+DECLARATION NOTATION
+
+
+function definded with "DECLARATION NOTATION" will work even if definded later than a when it is called.
+
+fuction DECLARATION are not the part of top to bottom flow of control;
+
+they are moved to the top of the of their "scope" and can be used by all the code inside the scope.
+
+
+
+ARROW FUNCTION
+
+SYNTAX
+
+||
+(parameters) => 
+{
+
+
+}
+||
+
+when only one parameter is given the rounded brackets can be ommitted.
+when the body of the statement is one-liner the return fuction can be ommitted to as the the result of the evalution is returned imediatly.
+
+
+
+
+THE CALL STACK
+
+
+It is the place where a computer stores the context.
+Every time a fuction is called, the current context is saved in the call STACK.
+
+when fuction returns something or end it remove the contexrt from the top
+
+
+
+OPTIONAL ARGUMENTS
+
+when given , ARGUMENTS more than a fuction asks will do no complain and will ignore the rest.
+or
+if given less the other missing values will be assigned the value of undefined.
+
+CONS 
+
+even someone accidently pass wrong number of ARGUMENTS there will no one to tell
+
+PROS
+
+this behaviour can be usefull as it can be allowed to called with different numbers of ARGUMENTS.
+
+
+(parameter = something)
+
+if used "=" this NOTATION after a parameter , followed by an expression,
+it will repalce the value of ARGUMENTS if that ARGUMENTS is not given.
+
+
+
+
