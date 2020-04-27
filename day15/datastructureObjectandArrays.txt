@@ -1,0 +1,84 @@
+number, booleans, and string are the atoms of data structure;
+
+objects allow us to group values - including other object - to build more complex structure.
+
+DATASET
+
+Array: sequencial form of data
+
+notation for getting at element inside an array also uses square brackets. 
+
+array is index based data structure.
+its index start from '0'.
+
+PROPERTIES
+
+MATH(its is object or collection of mathematics related constant and PROPERTIES).
+
+almost all javascript values have PROPERTIES. except : null and undefined.
+
+the two main way of accesing properties are "bracket or dot"  notation.
+
+both notation acceses a properties but not necessarilt same property
+
+the difference is in dot notation word after the is literal name of the property whereas in the expression inside the the bracket is evalutated and then converted into string so get a value.
+
+the number in array is stored as array's property,using number a property name.
+
+why array use bracket notation??
+
+Because you can’t use the dot notation with numbers and
+usually want to use a binding that holds the index anyway, you have to use the
+bracket notation to get at them.
+
+||
+
+//array.length
+//array["length"]
+
+
+both will work fine.
+
+||
+
+METHOD 
+
+properties which generaly contains a function value are called methods of the value they belong to.
+
+A stack, in programming, is a data structure that allows you to push
+values into it and pop them out again in the opposite order so that the thing
+that was added last is removed first.
+
+
+
+OBJECTS
+
+values of the type OBJECTS are arbitary collection of properties.
+
+inside a object those names whcih are not a valid binding or numbers which are not valid has to be in quotes.
+
+reading a property which doesnt existed gives "undefined"
+
+'delete" keyword is an unary operator that when applied to an object property will remove the named property from the object.
+
+delete only work on the objects not on array.when used on array it will not reduce the size of the array instead it set the value of deleted items to undefined.
+
+
+IN operator is binary. it tell if something with given property name is in the object or not.
+
+arrays are modified form of object.
+
+MUTABILITY
+
+Number , String and boolean are immutable(they cant be changed) whereas objects are not.
+
+there is difference between having two reference of the same object and ahving two object taht contains the smae prperties. 
+
+when two binding refers to same object in the memory they both of them are said to be having same indentity
+
+const binding to an object can itself not be changed and will continue to point at the same object, the contents of that object might change.
+
+when when compare object in javascript with "==" operator it compares by the indentity.
+
+
+

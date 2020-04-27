@@ -25,8 +25,8 @@ console.log(
 (pecualarities)
 
 A function can have multiple parameter or no parameter at all.
-Some function produce a vlaue and soem don't.
-Those functions which dont produce a value give "side effects'.
+Some function produce a vlaue and some don't.
+Those functions which dont produce a value gives "side effects'.
 
 
 RETURN (keyword)

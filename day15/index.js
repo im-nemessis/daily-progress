@@ -33,3 +33,5 @@ function printFarmInventory(num, ...objs) {
 }
 
 printFarmInventory(10, "hen");
+
+//THE LYCANTHROPE'S LOG
