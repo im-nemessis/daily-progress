@@ -1,7 +1,4 @@
 function deepComparison(obj1, obj2) {
-  if (obj1 === obj2) {
-    return true;
-  }
   let bool = typeof obj1 == "object" && typeof obj1 != null;
 
   console.log(bool);
