@@ -146,5 +146,62 @@ if used "=" this NOTATION after a parameter , followed by an expression,
 it will repalce the value of ARGUMENTS if that ARGUMENTS is not given.
 
 
+CLOSURE
 
 
+The fact that we can treat a fuction as a value and fact that a new binding is re-created every time a function is called arises a intereting question.
+
+what happens to a local binding when the fuction call that created them is no longer active?
+
+In this scenario bith instances of the binding can still be accesed.
+
+this situation is demostration of the fact that local bindings are created anew for every call, ans differnt calls cant trample on one another's loacl binding.
+
+ability to reference a specific instances of a local binding in aenclosign scope is called - CLOSURE.
+
+A function that reference binding from local scopes around it is called CLOSURE
+
+
+
+RECURSION
+
+when a fuction calls itself , this type of behaviour is known as RECURSION.
+and it is sperfectly okay!
+
+In typical javascript implementation it is almost three times slower than the looping version.
+
+it always have a base case , in from of flow statement or self satisfying scenario to avoid infinite recursion or call STACK overflow.
+
+
+
+Extra.
+
+
+""
+
+The second way is that you find you need some functionality that you haven’t
+written yet and that sounds like it deserves its own function. You’ll start by
+naming the function, and then you’ll write its body. You might even start
+writing code that uses the function before you actually define the function
+itself.
+
+
+
+""
+
+
+FUNCTIONS AND ITS SIDE EFFECTS 
+
+fuction can be roughly divided into those that are called for their side effects and those for thier values.
+
+its possible to have both in a fuction.
+
+the fuctions which gives value is easier to combine with other function than fuction that firectly prtforms side effects.
+
+
+PURE FUNCTION
+
+a pure function is a specific kind of value-producing function that not only has no side effects but also doesnt rely on the side effect from other code --- for example it should not read global binidngs whose value might changed
+
+
+a pure function has a pleasant property that when called with same arguments it produces same value whthout changing the meaning of the code
