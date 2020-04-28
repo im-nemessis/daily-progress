@@ -1,0 +1,11 @@
+ABSTRACTION
+
+ablity to hide  underlining details and ability to talk about the problem at a higher (or more abstract) level.
+
+It is a useful skill, in programming, to notice when you are working at too
+low a level of abstraction.
+
+functions that operate on other function , either by taking them as or by retruning them are called higher-order function. 
+
+HIigher-order function allow us to abstract over action not just values.
+
