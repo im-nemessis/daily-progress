@@ -133,4 +133,12 @@ function characterScript(code) {
   return null;
 }
 
-console.log(characterScript(66864));
+// console.log(characterScript(66864));
+
+function countBy(items, groupName) {
+  let counts = [];
+  for (item of itmes) {
+    let name = groupName(item);
+    let;
+  }
+}

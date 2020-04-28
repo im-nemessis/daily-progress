@@ -9,3 +9,4 @@ functions that operate on other function , either by taking them as or by retrun
 
 HIigher-order function allow us to abstract over action not just values.
 
+higher order function start to shine when we need to compose something.

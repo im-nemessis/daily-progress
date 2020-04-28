@@ -1,0 +1,46 @@
+“Debugging is twice as hard as writing the code in the first place.
+Therefore, if you write the code as cleverly as possible, you are, by
+definition, not smart enough to debug it.”
+                                       —Brian Kernighan and P.J. Plauger,
+
+
+flaw in computer programs are usually called bugs.
+
+if a program is crystallizes thought then bugs can be roughly catogerized into those cased by the thought being confused and those by mistake introduced while converting the thought into code.
+
+
+the process of finding bugs is called -- “Debugging
+ 
+ STRICT MODE
+
+ Javascript can be made little stricter by enabling strict mode.
+ this is done by putting string "use strict" at top of the file or function body.
+
+ normally if we forget to put let in front of our bindings as with counter in a loop, Javascript quietly creates a global binding and uses that.
+
+ in strict mode this is reported.
+
+--ANOTHER CHANGE--
+
+In strict mode "this" bindign holds the value undefined in a function that are not called as methods. 
+
+
+strict mode disallows giving a function multiple parameters with same naem and removes certain problematic language feature as "with"
+
+TYPES
+
+we can add a comment like the following before the any binding and parameters 
+one thing about the TYPES is that they need to introduce their know complexity to be able to describe enough code to be useful
+
+||
+
+([t]) -> t function from an array of Ts to a t.
+
+
+||
+
+
+DEBUGGING
+
+
+
